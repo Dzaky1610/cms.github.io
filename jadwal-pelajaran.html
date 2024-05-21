@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS SM</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../realcms/assets/css/style.css" />
+    <!-- Pastikan jQuery dimuat terlebih dahulu -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../realcms/assets/vendor/bootstrap/css/bootstrap.css"
+    />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+   
+    <!-- CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Slick Slider  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../realcms/assets/vendor/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../realcms/assets/vendor/slick/slick-theme.css"
+    />
+
+    <!-- Font Google -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="sticky-navBar">
+        <ul class="sidebar">
+          <li class="btn-x" onclick=hideSidebar()><a href="#"><svg fill="#f2f2f2" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#f2f2f2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M7.004 23.087l7.08-7.081-7.07-7.071L8.929 7.02l7.067 7.069L23.084 7l1.912 1.913-7.089 7.093 7.075 7.077-1.912 1.913-7.074-7.073L8.917 25z"></path></g></svg></svg></a></li>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Data</a></li>
+          <li><a href="#">Informasi</a></li>
+          <li><a href="#">Osis</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Opini<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu_mobile">
+              <ul>
+                <li>
+                  <a href="">apa aja 1</a>
+                </li>
+                <li>
+                  <a href="">apa aja 2</a>
+                </li>
+                <li>
+                  <a href="">apa aja 3</a>
+                </li>
+              </ul>
+            </div>  
+          </li>
+          <li><a href="#">Aplikasi</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <ul class="ul-nav">
+          <li class="img-navbar mb-3">
+            <div class="d-inline-flex text-navbar p-2">
+              <div class="mb-3">
+                <img
+                  src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="d-flex flex-column px-3" id="marqueeContainer">
+                <h5 class="h5">SMK CITRA NEGARA</h5>
+                <p id="marqueeText" class="p"> Mutu,Amanah,Nyaman,Taqwa,Anjay,Profesional</p>
+              </div>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Beranda<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="video.html">Video</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Profile<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="tentang-sekolah.html">Tentang Sekolah</a></li>
+                <li><a href="visi-misi.html">Visi Misi</a></li>
+                <li><a href="kepala-sekolah.html">Kepala Sekolah</a></li>
+                <li><a href="prestasi-sekolah.html">Prestasi Sekolah</a></li>
+                <li><a href="peminatan.html">Peminatan</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Data<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="sarpras.html">Sarpras</a></li>
+                <li><a href="guru.html">Guru</a></li>
+                <li><a href="siswa.html">Siswa</a></li>
+                <li><a href="lainnya.html">Lainnya</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Informasi<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="Pengumuman.html">Pengunguman</a></li>
+                <li><a href="agenda-kegiatan.html">Agenda Kegiatan</a></li>
+                <li><a href="jadwal-pelajaran.html">Jadwal Pelajaran</a></li>
+                <li><a href="jadwal-ujian.html">Jadwal Ujian</a></li>
+                <li><a href="extrakurikuler.html">Ekstrakulikuler</a></li>
+                <li><a href="unduhan.html">Unduhan</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Lainnya<i class="fa-solid fa-list ms-2"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="#">Osis <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="tentang-osis.html">Tentang Osis</a></li>
+                      <li><a href="pengurus-osis.html">Pengurus Osis</a></li>
+                      <li><a href="bidang-kegiatan.html">Bidang Kegiatan</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Opini <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="opini-guru">Guru</a></li>
+                      <li><a href="opini-siswa">Siswa</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Aplikasi <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="#">Jejaring SchoolMedia</a></li>
+                      <li><a href="#">Event</a></li>
+                      <li><a href="#">JA</a></li>
+                      <li><a href="#">MAU</a></li>
+                      <li><a href="#">Test Online</a></li>
+                      <li><a href="#">Try Out</a></li>
+                      <li><a href="#">Bahan Ajar</a></li>
+                      <li><a href="#">Biz</a></li>
+                      <li><a href="#">SCoin</a></li>
+                      <li><a href="#">News</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Link <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="#">Jibas</a></li>
+                      <li><a href="#">Dapodik</a></li>
+                      <li><a href="#">Rumah Belajar</a></li>
+                      <li><a href="#">Portal BOS</a></li>
+                      <li><a href="#">Ujian Nasional</a></li>
+                      <li><a href="#">Kemdikbud</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile button-login"><a href="#">Login</a></li>
+          <li class="hideOnMobile menu-button" onclick=showSidebar()><a href="#"><svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round"></path> </g></svg></a></li>
+        </ul>
+      </nav>
+    </header>
+    
+  <main>
+
+     
+    <!-- Gambar -->
+
+   <section class="img-page-header">
+    <div class="gambar-header"></div>
+    <p>Jadwal Pelajaran</p>
+  </section>
+
+  <div class="checkout-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-13 right-sidebar">
+          <div class="checkout-field-wrap">
+            <h3 class="cheakout-title pb-3" id="rombongan">
+              Daftar Rombongan Belajar PerTahun Ajaran
+            </h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="select_tahun">Tahun Ajaran</label>
+                  <select
+                    name="select_tahun"
+                    id="tahun-ajaran"
+                    class="form-control select_tahun"
+                  >
+                    <option value="">Select a state...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="select_tahun">Kelas</label>
+                  <select
+                    name="select_tahun"
+                    id="kelas"
+                    class="form-control select_tahun"
+                  >
+                    <option value="">Select a state...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="select_tahun">Peminatan</label>
+                  <select
+                    name="select_tahun"
+                    id="peminatan"
+                    class="form-control select_tahun"
+                  >
+                    <option value="">Select a state...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="select_tahun">Semester</label>
+                  <select
+                    name="select_tahun"
+                    id="semester"
+                    class="form-control select_tahun"
+                  >
+                    <option value="">Select a state...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="select_tahun">Rombongan belajar</label>
+                  <select
+                    name="select_tahun"
+                    id="rombongan-belajar"
+                    class="form-control select_tahun"
+                  >
+                    <option value="">Select a state...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <br />
+
+            <div>
+              <button class="btn px-4" id="btn-filter" type="submit">
+                Filter
+              </button>
+            </div>
+            <hr />
+            
+            <div class="d-flex row justify-content-end">
+              <form class="col-md-2">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+
+            <div class="container mt-5 position-relative">
+              <table class="table table-wrapper">
+                <thead>
+                  <tr></tr>
+                  <tr class="table" id="table" rowspan="4">
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Nama Rombel</th>
+                    <th rowspan="2">Kelas</th>
+                    <th rowspan="2">Tahun Ajaran</th>
+                    <th rowspan="2">Wali Kelas</th>
+                    <th class="Move-right col-5 text-center" colspan="5">
+                      Jumlah
+                    </th>
+                  </tr>
+                  <tr class="table" id="table" rowspan="4">
+                    <th>Laki Laki</th>
+                    <th>Perempuan</th>
+                    <th>Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom">
+                    <td>1</td>
+                    <td>Rombel Manggis</td>
+                    <td>11 Tkj 1</td>
+                    <td>2023-2024</td>
+                    <td>Satrio</td>
+                    <td>Beler</td>
+                    <td>Maimunah</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+
+      <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                       
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                         
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-instagram"></a>
+                                <a href="#" class="fab fa-youtube"></a>
+                                <a href=""><img src=".//assets/img/logo.png" class="icon" width="75%" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7" style="display:flex;">
+                        <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                        <p class="">Copyright 2024</p>
+                        <span class="material-symbols-outlined col-lg-3 col-md-6"style="color:white; display:flex; font-size:15px; margin-top:3px;">
+                          mail <p style="font-size:small; padding-left:4px; margin-right:15px;">info@Smkscitranegara.sch.id</p>
+                          phone <p style="font-size:small; font-size:small; padding-left:3px; margin-right:15px;">+6281325269477</p>
+                          location_on <p style="font-size:small; font-size:small; padding-left:3px;">Jl. Raya Tanah Baru No.99 Kemiri Jaya , Beji , Depok 16421</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+      
+
+
+
+
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+
+    <!-- Script -->
+    <script src="../realcms/assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script> -->
+    <script
+      type="text/javascript"
+      src="../realcms/assets/vendor/slick/slick.min.js"
+    ></script>
+
+     <!--=============== SWIPER JS ===============-->
+     <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="../realcms/script.js"></script>
+    <!-- Tambahkan di bagian <head> halaman Anda -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+<!-- Tambahkan sebelum penutup tag </body> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+  </body>
+</html>

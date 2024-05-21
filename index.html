@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS SM</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../realcms/assets/css/style.css" />
+    <!-- Pastikan jQuery dimuat terlebih dahulu -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../realcms/assets/vendor/bootstrap/css/bootstrap.css"
+    />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+   
+    <!-- CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Slick Slider  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../realcms/assets/vendor/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../realcms/assets/vendor/slick/slick-theme.css"
+    />
+
+    <!-- Font Google -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="sticky-navBar">
+        <ul class="sidebar">
+          <li class="btn-x" onclick=hideSidebar()><a href="#"><svg fill="#f2f2f2" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#f2f2f2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M7.004 23.087l7.08-7.081-7.07-7.071L8.929 7.02l7.067 7.069L23.084 7l1.912 1.913-7.089 7.093 7.075 7.077-1.912 1.913-7.074-7.073L8.917 25z"></path></g></svg></svg></a></li>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Data</a></li>
+          <li><a href="#">Informasi</a></li>
+          <li><a href="#">Osis</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Opini<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu_mobile">
+              <ul>
+                <li>
+                  <a href="">apa aja 1</a>
+                </li>
+                <li>
+                  <a href="">apa aja 2</a>
+                </li>
+                <li>
+                  <a href="">apa aja 3</a>
+                </li>
+              </ul>
+            </div>  
+          </li>
+          <li><a href="#">Aplikasi</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <ul class="ul-nav">
+          <li class="img-navbar mb-3">
+            <div class="d-inline-flex text-navbar p-2">
+              <div class="mb-3">
+                <img
+                  src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </div>
+              <div class="d-flex flex-column px-3" id="marqueeContainer">
+                <h5 class="h5">SMK CITRA NEGARA</h5>
+                <p id="marqueeText" class="p"> Mutu,Amanah,Nyaman,Taqwa,Anjay,Profesional</p>
+              </div>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Beranda<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="video.html">Video</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Profile<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="tentang-sekolah.html">Tentang Sekolah</a></li>
+                <li><a href="visi-misi.html">Visi Misi</a></li>
+                <li><a href="kepala-sekolah.html">Kepala Sekolah</a></li>
+                <li><a href="prestasi-sekolah.html">Prestasi Sekolah</a></li>
+                <li><a href="peminatan.html">Peminatan</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Data<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="sarpras.html">Sarpras</a></li>
+                <li><a href="guru.html">Guru</a></li>
+                <li><a href="siswa.html">Siswa</a></li>
+                <li><a href="lainnya.html">Lainnya</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Informasi<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="Pengumuman.html">Pengunguman</a></li>
+                <li><a href="agenda-kegiatan.html">Agenda Kegiatan</a></li>
+                <li><a href="jadwal-pelajaran.html">Jadwal Pelajaran</a></li>
+                <li><a href="jadwal-ujian.html">Jadwal Ujian</a></li>
+                <li><a href="extrakurikuler.html">Ekstrakulikuler</a></li>
+                <li><a href="unduhan.html">Unduhan</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Lainnya<i class="fa-solid fa-list ms-2"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="#">Osis <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="tentang-osis.html">Tentang Osis</a></li>
+                      <li><a href="pengurus-osis.html">Pengurus Osis</a></li>
+                      <li><a href="bidang-kegiatan.html">Bidang Kegiatan</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Opini <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="opini-guru">Guru</a></li>
+                      <li><a href="opini-siswa">Siswa</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Aplikasi <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="#">Jejaring SchoolMedia</a></li>
+                      <li><a href="#">Event</a></li>
+                      <li><a href="#">JA</a></li>
+                      <li><a href="#">MAU</a></li>
+                      <li><a href="#">Test Online</a></li>
+                      <li><a href="#">Try Out</a></li>
+                      <li><a href="#">Bahan Ajar</a></li>
+                      <li><a href="#">Biz</a></li>
+                      <li><a href="#">SCoin</a></li>
+                      <li><a href="#">News</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Link <i class="fas fa-caret-left"></i></a>
+                  <div class="dropdown_menu-1">
+                    <ul>
+                      <li><a href="#">Jibas</a></li>
+                      <li><a href="#">Dapodik</a></li>
+                      <li><a href="#">Rumah Belajar</a></li>
+                      <li><a href="#">Portal BOS</a></li>
+                      <li><a href="#">Ujian Nasional</a></li>
+                      <li><a href="#">Kemdikbud</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="hideOnMobile button-login"><a href="#">Login</a></li>
+          <li class="hideOnMobile menu-button" onclick=showSidebar()><a href="#"><svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round"></path> </g></svg></a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://disk.mediaindonesia.com/files/news/2022/12/30/WhatsApp%20Image%202022-12-22%20at%2017.06.59.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <!-- <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.452); transform: translateY(-50px);"> -->
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="background-color: #394867b9"
+          >
+            <h5>Cobaa</h5>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://disk.mediaindonesia.com/files/news/2022/12/30/WhatsApp%20Image%202022-12-22%20at%2017.07.10%20(1).jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWaMObZJDudJeRr8kpMRiAjUczT4az7gU-veoBrdHhqAkaP5Fw3msae_8L2xC1w_b0GHg&usqp=CAU"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="section-head col-sm-12"> -->
+          <!-- <h4><span>WHY Choose</span> Me?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga veniam, voluptatum beatae iure nisi inventore laudantium doloribus atque obcaecati consectetur rerum, odit impedit eveniet incidunt nulla harum itaque deserunt?</p> -->
+          <!-- </div> -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="item">
+              <span class="icon feature_box_col_one"
+                ><img src="assets/img/quest (1).png" width="70px" alt=""
+              /></span>
+              <h6 class="h6">Visi Misi</h6>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item">
+              <span class="icon feature_box_col_two"
+                ><img src="assets/img/school.png" width="70px" alt=""
+              /></span>
+              <h6 class="h6">Tentang Sekolah</h6>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item">
+              <span class="icon feature_box_col_three"
+                ><img src="assets/img/students.png" width="70px" alt=""
+              /></span>
+              <h6 class="h6">Siswa</h6>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="rgb(234, 128, 188)"
+        fill-opacity="1"
+        d="M0,192L16,181.3C32,171,64,149,96,165.3C128,181,160,235,192,213.3C224,192,256,96,288,80C320,64,352,128,384,144C416,160,448,128,480,144C512,160,544,224,576,240C608,256,640,224,672,202.7C704,181,736,171,768,181.3C800,192,832,224,864,208C896,192,928,128,960,133.3C992,139,1024,213,1056,256C1088,299,1120,309,1152,282.7C1184,256,1216,192,1248,154.7C1280,117,1312,107,1344,106.7C1376,107,1408,117,1424,122.7L1440,128L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z"
+      ></path>
+    </svg>
+    <div class="container my-5">
+      <h1 class="headline">KEPALA SEKOLAH</h1>
+      <div class="row-about align-items-center">
+        <div class="col-5;k;k;k;;;llll;;; img">
+          <img
+            src="../realcms/assets/img/e3944b0636bbecfeec4606a5e3392e1b.jpg"
+            alt="Deskripsi Gambar"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6">
+          <p class="desc-headmaster">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Expedita similique
+            esse porro dolorem voluptatibus, vero odio! Laborum consequatur et
+            officiis facere, corporis excepturi pariatur veritatis tenetur
+            sapiente. Reprehenderit, itaque necessitatibus?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="rgb(234, 128, 188)"
+          fill-opacity="1"
+          d="M0,192L16,181.3C32,171,64,149,96,165.3C128,181,160,235,192,213.3C224,192,256,96,288,80C320,64,352,128,384,144C416,160,448,128,480,144C512,160,544,224,576,240C608,256,640,224,672,202.7C704,181,736,171,768,181.3C800,192,832,224,864,208C896,192,928,128,960,133.3C992,139,1024,213,1056,256C1088,299,1120,309,1152,282.7C1184,256,1216,192,1248,154.7C1280,117,1312,107,1344,106.7C1376,107,1408,117,1424,122.7L1440,128L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"
+        ></path>
+      </svg> -->
+
+
+
+      <!-- Section Guru -->
+
+    <div class="container" id="container-berita">
+      <div id="berita" class="pt-5">
+        <h2 class="text-center my-5">BERITA</h2>
+        <div class="row" id="row-card">
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../realcms/assets/img/Pentas Seni SMK Citra Negara di Kecamatan Beji.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Konser Smk Citra Negara</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-lg" id="button-detail"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../realcms/assets/img/Screenshot 2024-02-28 120613.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Program Sekolah Smk Citra Negara</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-lg" id="button-detail"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../realcms/assets/img/Screenshot 2024-02-28 142237.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Smk Citra Negara Berkunjung Ke Superdeal
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-lg" id="button-detail"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slick Slider Section Guru -->
+
+    <div class="container my-5" id="container-slick">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-8">
+          <div class="text-center">
+            <h1 class="text-slick" style="font-size: 35px">GURU</h1>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="slider">
+        <div class="mx-2">
+          <img
+            src="../realcms/assets/img/Screenshot 2024-02-28 120613.png"
+            alt=""
+          />
+          <div class="text-center xyz">
+            <p
+              class="pt-2"
+              id="nama-guru"
+              style="font-family: Fredoka, sans-serief"
+            >
+              Papa Zola
+            </p>
+            <p class="px-2" id="desc-guru">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              totam libero dolorem perspiciatis..
+            </p>
+          </div>
+        </div>
+        <div class="mx-2">
+          <img
+            src="../realcms/assets/img/Screenshot 2024-02-28 120613.png"
+            alt=""
+          />
+          <div class="text-center xyz">
+            <p
+              class="pt-2"
+              id="nama-guru"
+              style="font-family: Fredoka, sans-serief"
+            >
+              Jasmine
+            </p>
+            <p class="px-2" id="desc-guru">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              totam libero dolorem perspiciatis..
+            </p>
+          </div>
+        </div>
+        <div class="mx-2">
+          <img
+            src="../realcms/assets/img/Screenshot 2024-02-28 120613.png"
+            alt=""
+          />
+          <div class="text-center xyz">
+            <p
+              class="pt-2"
+              id="nama-guru"
+              style="font-family: Fredoka, sans-serief"
+            >
+              Melati
+            </p>
+            <p class="px-2" id="desc-guru">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              totam libero dolorem perspiciatis..
+            </p>
+          </div>
+        </div>
+        <div class="mx-2">
+          <img
+            src="../realcms/assets/img/Screenshot 2024-02-28 120613.png"
+            alt=""
+          />
+          <div class="text-center xyz">
+            <p
+              class="pt-2"
+              id="nama-guru"
+              style="font-family: Fredoka, sans-serief"
+            >
+              Dumbledore
+            </p>
+            <p class="px-2" id="desc-guru">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              totam libero dolorem perspiciatis..
+            </p>
+          </div>
+        </div>
+        <div class="mx-2">
+          <img
+            src="../realcms/assets/img/Screenshot 2024-02-28 120613.png"
+            alt=""
+          />
+          <div class="text-center xyz">
+            <p
+              class="pt-2"
+              id="nama-guru"
+              style="font-family: Fredoka, sans-serief"
+            >
+              Snapes
+            </p>
+            <p class="px-2" id="desc-guru">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              totam libero dolorem perspiciatis..
+            </p>
+          </div>
+        </div>
+        <div class="mx-2">
+          <img
+            src="../realcms/assets/img/Screenshot 2024-02-28 120613.png"
+            alt=""
+          />
+          <div class="text-center xyz" id="head">
+            <p
+              class="pt-2"
+              id="nama-guru"
+              style="font-family: Fredoka, sans-serief"
+            >
+              Valdemort
+            </p>
+            <p class="px-2" id="desc-guru">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              totam libero dolorem perspiciatis..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Agenda -->
+    <h1 class="agenda">AGENDA</h1>
+    <div class="wrapper">
+      <div class="card-gallery" id="">
+        <img src="../realcms/assets/img/pexels-brian-hackworth-3191031.jpg" alt="">
+        <div class="info">
+          <h1>Horseshoe Bend, Arizona</h1>
+          <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card-gallery">
+        <img src="../realcms/assets/img/pexels-brian-hackworth-3191031.jpg" alt="">
+        <div class="info">
+          <h1>Travel</h1>
+          <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card-gallery">
+        <img src="../realcms/assets/img/pexels-brian-hackworth-3191031.jpg" alt="">
+        <div class="info">
+          <h1>Pragser Wildsee</h1>
+          <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card-gallery">
+        <img src="../realcms/assets/img/pexels-brian-hackworth-3191031.jpg" alt="">
+        <div class="info">
+          <h1>Heaven on Earth</h1>
+          <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  
+      <!-- _______________________________________________ Offers Prodcut Slider _____________________________________________________ -->
+
+         <div class="container my-5 py-5" id="container-gallery">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-8">
+              <div class="text-center">
+                <h3 class="text" style="font-size: 35px;" id="text-warning">ALBUM</h3>
+              </div>
+            </div>
+          </div>
+          <br>
+    
+          <div class="slider-gallery">
+            <div class="mx-3">
+              <div class="card border-0 rounded-0"
+                style="background-image:url(https://images.unsplash.com/photo-1605807646983-377bc5a76493?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);background-size: cover;">
+                <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+                  <div class="text-center pb-2  w-100 pt-3 bg-opacity-75">
+                    <a class="text-white fw-bold">Ice Cake</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-3">
+              <div class="card border-0 rounded-0"
+                style="background-image:url(https://media.istockphoto.com/photos/indian-sweets-in-a-plate-includes-gulab-jamun-rasgulla-kaju-katli-picture-id1054228718?k=20&m=1054228718&s=612x612&w=0&h=OFcioOdcbacinr2F7M0hULoAr3egWnU_BIt5XLmznf0=) ;background-size: cover;">
+                <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+                  <div class="text-center pb-2  w-100 pt-3 bg-opacity-75">
+                    <a class="text-white fw-bold">Sweets</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-3">
+              <div class="card border-0 rounded-0"
+                style="background-image:url(https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80) ;background-size: cover;">
+                <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+                  <div class="text-center pb-2  w-100 pt-3 bg-opacity-75">
+                    <a class="text-white fw-bold">Biscuits</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-3">
+              <div class="card border-0 rounded-0"
+                style="background-image:url(https://w0.peakpx.com/wallpaper/754/603/HD-wallpaper-chocolate-ice-cream-close-up-sweets-ice-cream-balls-ice-cream.jpg);background-size: cover;">
+                <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+                  <div class="text-center pb-2  w-100 pt-3 bg-opacity-75">
+                    <a class="text-white fw-bold">Ice Cream</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-3">
+              <div class="card border-0 rounded-0"
+                style="background-image:url(https://c4.wallpaperflare.com/wallpaper/317/423/666/chocolate-4k-hd-pc-download-wallpaper-preview.jpg) ;background-size: cover;">
+                <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+                  <div class="text-center pb-2  w-100 pt-3 bg-opacity-75">
+                    <a class="text-white fw-bold">Chocolate</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-3">
+              <div class="card border-0 rounded-0"
+                style="background-image:url(https://thekababjeesbakers.com/wp-content/uploads/2020/02/157-300x300.jpg);background-size: cover;">
+                <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+                  <div class="text-center pb-2  w-100 pt-3 bg-opacity-75">
+                    <a class="text-white fw-bold">Cake Rusk</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+
+      </main>
+
+
+      <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                       
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                         
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-instagram"></a>
+                                <a href="#" class="fab fa-youtube"></a>
+                                <a href=""><img src=".//assets/img/logo.png" class="icon" width="75%" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7" style="display:flex;">
+                        <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                        <p class="">Copyright 2024</p>
+                        <span class="material-symbols-outlined col-lg-3 col-md-6"style="color:white; display:flex; font-size:15px; margin-top:3px;">
+                          mail <p style="font-size:small; padding-left:4px; margin-right:15px;">info@Smkscitranegara.sch.id</p>
+                          phone <p style="font-size:small; font-size:small; padding-left:3px; margin-right:15px;">+6281325269477</p>
+                          location_on <p style="font-size:small; font-size:small; padding-left:3px;">Jl. Raya Tanah Baru No.99 Kemiri Jaya , Beji , Depok 16421</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+      
+
+
+
+
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+
+    <!-- Script -->
+    <script src="../realcms/assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script> -->
+    <script
+      type="text/javascript"
+      src="../realcms/assets/vendor/slick/slick.min.js"
+    ></script>
+
+     <!--=============== SWIPER JS ===============-->
+     <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="../realcms/script.js"></script>
+  </body>
+</html>
